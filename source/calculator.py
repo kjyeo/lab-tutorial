@@ -33,6 +33,9 @@ def operate():
         entry.delete(0, tk.END)                     # clear the entry box
         entry.insert(0, "Error")                    # display an "Error" message in entry box
 
+def get_entry():
+    return entry.get()
+
 # Create a Tkinter window
 root = tk.Tk()
 root.title("Simple Calculator")
@@ -73,6 +76,8 @@ for (text, row, col, span) in buttons:
                            command=lambda text=text: button_click(text))
     button.grid(row=row, column=col, columnspan=span)
 
-# Run the Tkinter event loop
-root.mainloop()
+
+if __name__ == '__main__':
+    # Run the Tkinter event loop
+    root.mainloop()
 

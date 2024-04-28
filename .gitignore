@@ -1,3 +1,4 @@
 site/
 .github/*
 !.github/workflows
+__pycache__
