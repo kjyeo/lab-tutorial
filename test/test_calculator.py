@@ -1,7 +1,6 @@
 import sys
 
-# append the path of the
-# parent directory
+# append the path of the parent directory
 sys.path.append("..")
 
 # import method from sibling module
@@ -20,8 +19,6 @@ C_WHTIE = "\033[1;0m"
 C_RESET = C_WHTIE
 
 class TestCalculator(unittest.TestCase):
-
-
     # execute on each test method
     def setUp(self):
         print(f"{C_BLUE}\n[setup] clear display{C_RESET}")
